@@ -3,6 +3,7 @@ import asyncio
 import chess
 import chess.engine
 import typing
+import queue
 
 
 class Tree:
@@ -12,18 +13,20 @@ class Tree:
 
     def create_tree(self, root, depth) -> None:
         # print(list(root.board.legal_moves))
+        print(len(list(root.board.legal_moves)))
         if (len(list(root.board.legal_moves)) != 0 and depth >= 0):
             for move in root.board.legal_moves:
                 print(move)
                 newboard = chess.Board(root.board.fen())
                 newboard.push(move)
                 print(newboard)
-                child_node = Node(newboard, root.engine_path)
-                root.children.append(child_node)
-                self.create_tree(child_node, depth-1)
 
-    def get_children(self, node) -> list[int]:
-        print(node.children)
+                child_node = Node(newboard, root.engine_path)
+                # small pruning optimization
+                # if next position has lower eval than current, cut itself and all children
+                if child_node.getEval().__ge__(root.getEval()):
+                    root.children.append(child_node)
+                    self.create_tree(child_node, depth-1)
 
     def get_root_fen(self):
         print(self.root_node.board.fen())
