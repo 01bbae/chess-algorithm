@@ -5,14 +5,16 @@ import typing
 
 
 class Node:
-    def __init__(self, fen, engine_path) -> None:
-        self.fen = fen
-        self.board = chess.Board(fen=fen)
+    def __init__(self, board, engine_path) -> None:
+        self.board = board
         self.engine_path = engine_path
         self.children = []
+        engine = chess.engine.SimpleEngine.popen_uci(self.engine_path)
+        info = engine.analyse(self.board, chess.engine.Limit(depth=20))
+        self.eval = info["score"]
 
-    async def getEval(self) -> chess.engine.PovScore:
-        transport, engine = await chess.engine.popen_uci("/usr/bin/stockfish")
-        info = await engine.analyse(self.board, chess.engine.Limit(depth=20))
-        await engine.quit()
-        return info["score"]
+    def getEval(self) -> chess.engine.PovScore:
+        return self.eval
+
+    def get_node_info(self):
+        return (self.board.fen(), self.eval)
