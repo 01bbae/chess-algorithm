@@ -4,7 +4,7 @@
 
 Currently, popular chess engines will evaluate the most ideal move on chess based on the best move. Stockfish, for example, uses the alpha-beta pruning algorithm to evaluate the best positions.
 
-The goal of this project is to build on top of these popular chess engines; Specifically, we would like to add a chess algorithm that will return not the best move, but good-enough moves.
+The goal of this project is to build on top of these popular chess engines; Specifically, we would like to add a chess algorithm that will return not the best move, but good-enough moves so players have variety of moves to choose from.
 
 ### Setup:
 
