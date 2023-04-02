@@ -1,19 +1,35 @@
-# chess-algorithm
+# Chess-Algorithm
 
-A chess algorithm for better human evaluation
+### Description
 
-Contributors:
+Currently, popular chess engines will evaluate the most ideal move on chess based on the best move. Stockfish, for example, uses the alpha-beta pruning algorithm to evaluate the best positions.
 
-Useful References:
+The goal of this project is to build on top of these popular chess engines; Specifically, we would like to add a chess algorithm that will return not the best move, but good-enough moves.
 
-https://python-chess.readthedocs.io/en/latest/
+### Setup:
 
-https://healeycodes.com/building-my-own-chess-engine
+1. Make sure you have Python 3.7+ installed
+2. git clone this repository
+3. pip install chess
+4. cd into this repository directory. Run main.py
 
-https://stackoverflow.com/questions/16500739/chess-high-branching-factor
+### Progress:
 
-https://chess.stackexchange.com/questions/33161/do-chess-engines-hold-their-search-tree-in-memory
+- [x] Understand how stockfish and other chess engine algorithm is ran
+- [x] Implemented stockfish library into python script
+- [x] Implemented Zobrist Hashing Algorithm
+- [ ] Connect Zobrist Hashing Algorithm to chessboard
+- [ ] Grab the list of "good moves"
 
-https://en.wikipedia.org/wiki/Transposition_table
+### Contributors:
 
-https://en.wikipedia.org/wiki/Zobrist_hashing
+BJ Bae, Joan Karstrom, Tyler Kay, Eric Phan, Raymond Yan
+
+### Useful References:
+
+- https://python-chess.readthedocs.io/en/latest/
+- https://healeycodes.com/building-my-own-chess-engine
+- https://stackoverflow.com/questions/16500739/chess-high-branching-factor
+- https://chess.stackexchange.com/questions/33161/do-chess-engines-hold-their-search-tree-in-memory
+- https://en.wikipedia.org/wiki/Transposition_table
+- https://en.wikipedia.org/wiki/Zobrist_hashing
