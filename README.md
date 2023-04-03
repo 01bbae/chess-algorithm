@@ -19,7 +19,7 @@ The goal of this project is to build on top of these popular chess engines; Spec
 - [x] Implemented stockfish library into python script
 - [x] Implemented Zobrist Hashing Algorithm
 - [ ] Connect Zobrist Hashing Algorithm to chessboard
-- [ ] Grab the list of "good moves"
+- [x] Grab the list of "good moves"
 
 ## Contributors:
 

@@ -20,10 +20,12 @@ print("Loading...")
 newTree = Tree(fen, int(depth), engine_path)
 print("Analysis tree created.")
 while True:
+    print("================================================================")
     print("What would you like to do:")
     print("1. Get evaluation of the current position using stockfish")
     print("2. Get best next move in the current position")
     print("3. Exit program")
+    print("================================================================")
 
     choice = input("Enter choice number: ")
 

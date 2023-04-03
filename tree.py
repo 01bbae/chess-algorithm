@@ -16,7 +16,7 @@ class Tree:
 
     def create_tree(self, root, depth) -> Node:
         if (len(list(root.board.legal_moves)) > 0 and depth >= 0):
-            for move in random.sample(list(root.board.legal_moves), 3): # only get 3 legal moves
+            for move in random.sample(list(root.board.legal_moves), 10): # only get 10 legal moves
                 newboard = chess.Board(root.board.fen())
                 newboard.push(move)
                 # print(move)
@@ -67,20 +67,20 @@ class Tree:
             for curr_node in min_node.get_children():
                 num_choices += 1
                 # all calculated using centipawn loss
-                print(curr_node.getEval().white())
-                if (curr_node.getEval().white().__le__(Cp(min_node.getEval().white().score() - 300))):
+                print(curr_node.getEval())
+                if (curr_node.getEval().__le__(Cp(min_node.getEval().score() - 300))):
                     num_blunder += 1
-                elif(curr_node.getEval().white().__gt__(Cp(min_node.getEval().white().score() - 300)) and curr_node.getEval().white().__lt__(Cp(min_node.getEval().white().score() - 100))):
+                elif(curr_node.getEval().__gt__(Cp(min_node.getEval().score() - 300)) and curr_node.getEval().__lt__(Cp(min_node.getEval().score() - 100))):
                     num_mistake += 1
-                elif(curr_node.getEval().white().__ge__(Cp(min_node.getEval().white().score() - 100)) and curr_node.getEval().white().__lt__(Cp(min_node.getEval().white().score() + 0))):
+                elif(curr_node.getEval().__ge__(Cp(min_node.getEval().score() - 100)) and curr_node.getEval().__lt__(Cp(min_node.getEval().score() + 0))):
                     num_inaccuracy += 1
-                elif(curr_node.getEval().white().__gt__(Cp(min_node.getEval().white().score() - 0)) and curr_node.getEval().white().__lt__(Cp(min_node.getEval().white().score() + 300))):
+                elif(curr_node.getEval().__gt__(Cp(min_node.getEval().score() - 0)) and curr_node.getEval().__lt__(Cp(min_node.getEval().score() + 300))):
                     num_good += 1
-                elif(curr_node.getEval().white().__ge__(Cp(min_node.getEval().white().score() + 300))):
+                elif(curr_node.getEval().__ge__(Cp(min_node.getEval().score() + 300))):
                     num_excellent += 1
                  # arbitrary parameters to weight different types of moves
                 # use function 10/(x+2) to weight choices of moves (more = bad, less = good) This is also arbitrary
-                score += num_blunder*-5 + num_mistake*-2 + num_inaccuracy*-1 + num_good*1 + num_excellent*1 + (10/(num_choices+2))
+                score += num_blunder*-5 + num_mistake*-2 + num_inaccuracy*-1 + num_good*1 + num_excellent*1 + (10/(num_choices+2)) + curr_node.getEval().score()
                 # print("num_choices", num_choices)
                 # print("num_blunder", num_blunder)
                 # print("num_mistake", num_mistake)

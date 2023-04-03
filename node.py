@@ -14,8 +14,11 @@ class Node:
         self.eval = info["score"]
         engine.quit()
 
-    def getEval(self) -> chess.engine.PovScore:
-        return self.eval
+    def getEval(self, turn="white") -> chess.engine.PovScore:
+        if turn == "white":
+            return self.eval.white()
+        else:
+            return self.eval.black()
 
     def get_node_info(self):
         return (self.board.fen(), self.eval)
