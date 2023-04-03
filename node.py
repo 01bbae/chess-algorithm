@@ -12,6 +12,7 @@ class Node:
         engine = chess.engine.SimpleEngine.popen_uci(self.engine_path)
         info = engine.analyse(self.board, chess.engine.Limit(depth=10))
         self.eval = info["score"]
+        engine.quit()
 
     def getEval(self) -> chess.engine.PovScore:
         return self.eval
@@ -25,7 +26,7 @@ class Node:
     def get_num_children(self):
         return len(self.children)
     
-    def printPosition(self):
-        print(self.board)
+    def getBoard(self):
+        return self.board
 
     

@@ -64,7 +64,6 @@ class Tree:
             num_good = 0
             num_excellent = 0
             score = 0
-            eval_sum = 0
             for curr_node in min_node.get_children():
                 num_choices += 1
                 # all calculated using centipawn loss
@@ -82,27 +81,15 @@ class Tree:
                  # arbitrary parameters to weight different types of moves
                 # use function 10/(x+2) to weight choices of moves (more = bad, less = good) This is also arbitrary
                 score += num_blunder*-5 + num_mistake*-2 + num_inaccuracy*-1 + num_good*1 + num_excellent*1 + (10/(num_choices+2))
-                curr_node.printPosition()
-                print("num_choices", num_choices)
-                print("num_blunder", num_blunder)
-                print("num_mistake", num_mistake)
-                print("num_inaccuracy", num_inaccuracy)
-                print("num_good", num_good)
-                print("num_excellent", num_excellent)
+                # print("num_choices", num_choices)
+                # print("num_blunder", num_blunder)
+                # print("num_mistake", num_mistake)
+                # print("num_inaccuracy", num_inaccuracy)
+                # print("num_good", num_good)
+                # print("num_excellent", num_excellent)
             move_score.append((score, node_i))
-            print(move_score)
-        best_move = max(move_score, key=itemgetter(0))[1]
-        print(best_move)
+        best_move = max(move_score, key=itemgetter(0))
         return best_move
-
-            # num_choices = 0
-            # num_good_moves = 0
-            # eval_sum = 0
-            # for nodej in nodei.get_children():
-            #     num_choices += 1
-            #     if nodej.getEval().__ge__(nodei.getEval()):
-            #         num_good_moves += 1
-            # score = num_good_moves/num_choices
                 
 
 
