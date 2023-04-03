@@ -21,3 +21,11 @@ class Node:
     
     def get_children(self):
         return self.children
+    
+    def get_num_children(self):
+        return len(self.children)
+    
+    def printPosition(self):
+        print(self.board)
+
+    

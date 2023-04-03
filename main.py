@@ -9,6 +9,11 @@ elif (os.name == "posix"):
     engine_path = "stockfish"
 else:
     raise Exception("OS Error: OS not recognized")
-newTree = Tree(chess.STARTING_FEN, engine_path)
+newTree = Tree(chess.STARTING_FEN, 2, engine_path)
+newTree.getBestNextMove().printPosition()
+# print(newTree.get_root_children())
 # newTree.print_root_board()
-newTree.create_tree(newTree.root_node, 2)
+# print(newTree.get_root_node().getEval().white())
+# print(newTree.get_root_node().getEval().black())
+# print(newTree.get_root_node().getEval().relative)
+# print(newTree.get_root_node().getEval().black().score())

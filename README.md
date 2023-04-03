@@ -17,3 +17,6 @@ https://chess.stackexchange.com/questions/33161/do-chess-engines-hold-their-sear
 https://en.wikipedia.org/wiki/Transposition_table
 
 https://en.wikipedia.org/wiki/Zobrist_hashing
+
+https://support.chess.com/article/2965-how-are-moves-classified-what-is-a-blunder-or-brilliant-and-etc
+
