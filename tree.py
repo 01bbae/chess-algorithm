@@ -9,14 +9,14 @@ from operator import itemgetter
 
 
 class Tree:
-    def __init__(self, starting_fen, depth, engine_path) -> None:
+    def __init__(self, starting_fen, depth, num_branches, engine_path) -> None:
         self.engine_path = engine_path
         self.root_node = Node(chess.Board(fen=starting_fen), engine_path)
-        self.tree = self.create_tree(self.root_node, depth)
+        self.tree = self.create_tree(self.root_node, depth, num_branches)
 
-    def create_tree(self, root, depth) -> Node:
+    def create_tree(self, root, depth, num_branches) -> Node:
         if (len(list(root.board.legal_moves)) > 0 and depth >= 0):
-            for move in random.sample(list(root.board.legal_moves), 10): # only get 10 legal moves
+            for move in random.sample(list(root.board.legal_moves), num_branches): # only get "num_branches" legal moves
                 newboard = chess.Board(root.board.fen())
                 newboard.push(move)
                 # print(move)
@@ -27,7 +27,7 @@ class Tree:
                 # if next position has lower eval than current, cut itself and all children
                 # if child_node.getEval().__ge__(root.getEval()):
                 root.children.append(child_node)
-                self.create_tree(child_node, depth-1)
+                self.create_tree(child_node, depth-1, num_branches)
         return root
 
 

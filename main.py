@@ -13,11 +13,12 @@ else:
 print("Chess-Algorithm")
 fen = input("Enter FEN to analyze (Press enter to use default initial chess position): ")
 depth = input("Enter depth to analyze (WARNING: having a large depth might crash your computer. We recommend having depth of 2 or 3): ")
-
+num_branches = input("Enter number of branches to analyze (WARNING: having a large number of branches might crash your computer. We recommend having depth of less than 10): ")
 if len(fen)==0:
     fen = chess.STARTING_FEN
 print("Loading...")
-newTree = Tree(fen, int(depth), engine_path)
+print("This might take a few minutes...")
+newTree = Tree(fen, int(depth), int(num_branches), engine_path)
 print("Analysis tree created.")
 while True:
     print("================================================================")
