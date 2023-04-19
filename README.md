@@ -11,7 +11,8 @@ The goal of this project is to build on top of these popular chess engines; Spec
 1. Make sure you have Python 3.7+ installed
 2. git clone this repository
 3. pip install chess
-4. cd into this repository directory. Run main.py
+4. If you have a Mac, do 'brew install stockfish'. cd into /usr/local/Cellar/stockfish/{version}/bin. Copy the stockfish executable into the project directory.
+5. cd into this repository directory. Run main.py
 
 ## Progress:
 
