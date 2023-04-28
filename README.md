@@ -1,14 +1,10 @@
 # Chess-Algorithm
 
-## Description
+## Description/Motivation
 
-The motivation behind modifying a chess algorithm that returns "good-enough" moves instead of just the best move is to enhance the player experience and increase the variety of possible gameplay scenarios. Currently, popular chess engines such as Stockfish are designed to evaluate and choose the most optimal move based on a given set of parameters, such as material advantage, piece mobility, and king safety. These popular chess engines use algorithms such as alpha-beta pruning, and mini-max algorithm.
+The motivation for modifying a chess algorithm to generate "good-enough" moves instead of solely the best move is to enhance the player experience and offer a more diverse set of gameplay scenarios. Current chess engines, such as Stockfish, use algorithms like alpha-beta pruning and mini-max to select the optimal move based on factors like material advantage, piece mobility, and king safety. While this approach has led to powerful and reliable chess engines, it may be problematic for players who want to learn while playing.
 
-While this approach has been successful in producing strong and reliable chess engines, it can also lead to repetitive gameplay and lack of variety. Players may feel like they are always playing against the same strategy, which can become monotonous over time.
-
-By introducing a chess algorithm that returns good-enough moves, players are given a wider range of options to choose from. These moves may not be the absolute best, but they can still be strong and strategically sound, providing a fresh and varied gameplay experience. Additionally, players may find it more challenging and enjoyable to play against a chess engine that is not always making the optimal move.
-
-Overall, the goal of this project is to add an element of unpredictability and excitement to chess gameplay, while still maintaining a high level of strategic and tactical sophistication.
+By introducing a chess algorithm that generates multiple viable moves, players have a broader range of options to choose from, allowing them to select moves that align with their play-style and chess openings. Although these moves may not be the absolute best, they are still strategically sound and can offer a unique gameplay experience. Additionally, playing against a chess engine that does not always choose the optimal move may make the game more challenging and enjoyable.
 
 ## Setup:
 
