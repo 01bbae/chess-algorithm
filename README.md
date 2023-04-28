@@ -2,9 +2,13 @@
 
 ## Description
 
-Currently, popular chess engines will evaluate the most ideal move on chess based on the best move. Stockfish, for example, uses the alpha-beta pruning algorithm to evaluate the best positions.
+The motivation behind modifying a chess algorithm that returns "good-enough" moves instead of just the best move is to enhance the player experience and increase the variety of possible gameplay scenarios. Currently, popular chess engines such as Stockfish are designed to evaluate and choose the most optimal move based on a given set of parameters, such as material advantage, piece mobility, and king safety. These popular chess engines use algorithms such as alpha-beta pruning, and mini-max algorithm.
 
-The goal of this project is to build on top of these popular chess engines; Specifically, we would like to add a chess algorithm that will return not the best move, but good-enough moves so players have variety of moves to choose from.
+While this approach has been successful in producing strong and reliable chess engines, it can also lead to repetitive gameplay and lack of variety. Players may feel like they are always playing against the same strategy, which can become monotonous over time.
+
+By introducing a chess algorithm that returns good-enough moves, players are given a wider range of options to choose from. These moves may not be the absolute best, but they can still be strong and strategically sound, providing a fresh and varied gameplay experience. Additionally, players may find it more challenging and enjoyable to play against a chess engine that is not always making the optimal move.
+
+Overall, the goal of this project is to add an element of unpredictability and excitement to chess gameplay, while still maintaining a high level of strategic and tactical sophistication.
 
 ## Setup:
 
