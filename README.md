@@ -28,7 +28,7 @@ Although this article reads more like a narrative, it is still quite insightful.
 
 This article was necessary for us to proceed with our project. It takes one of the most famously studied chess endgames and places it into several chess engines to see how each would respond to it differently. Not only does it show how they solved it, the article talks about what methods were explicitly used. Since we were using Stockfish's engine we were mainly focused on that aspect and how they were using the alpha-beta pruning search algorithm and how exactly it was improving minimax searches, but if anybody is taking a look at our project and would like to expand on the idea, we highly recommend taking a look at this article.
 
-## Setup:
+## Setup
 
 1. Make sure you have Python 3.7+ installed
 2. git clone this repository
@@ -36,11 +36,20 @@ This article was necessary for us to proceed with our project. It takes one of t
 4. If you have a Mac, do 'brew install stockfish'. cd into /usr/local/Cellar/stockfish/{version}/bin. Copy the stockfish executable into the project directory.
 5. cd into this repository directory. Run main.py
 
-## Contributors:
+## Running the Code
+
+1. Change you directory to the chess-algorithm directory. Run the code normally like how you would start a python project. In my case, I ran it as
+```
+python main.py
+```
+
+!(/relative/path/to/cpsc406_screenshot1.jpg?raw=true)
+
+## Contributors
 
 BJ Bae, Joan Karstrom, Tyler Kay, Eric Phan, Raymond Yan
 
-## Useful References:
+## Useful References
 
 - https://python-chess.readthedocs.io/en/latest/
 - https://healeycodes.com/building-my-own-chess-engine
