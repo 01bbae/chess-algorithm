@@ -41,9 +41,9 @@ This article was necessary for us to proceed with our project. It takes one of t
 #### Using a default position
 
 1. Change you directory to the chess-algorithm directory. Run the code normally like how you would start a python project. In my case, I ran it as:
-```
-python main.py
-```
+   ```
+   python main.py
+   ```
 2. Follow the prompt and fill in the choices that you would like to see for example:
 ```
 Enter FEN to analyze (Press enter to use default initial chess position): 
