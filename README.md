@@ -40,7 +40,7 @@ This article was necessary for us to proceed with our project. It takes one of t
 
 #### Using a default position
 
-1. Change you directory to the chess-algorithm directory. Run the code normally like how you would start a python project. In my case, I ran it as:
+1. Change your directory to the "chess-algorithm" directory. Run the code normally like how you would start a python project. In my case, I ran it as:
    ```
    python main.py
    ```
@@ -106,25 +106,33 @@ This article was necessary for us to proceed with our project. It takes one of t
 
 ## Future Development / Final Words
 
-Overall, we are proud of what we have accomplished in our project. Unfortunately, most of the time spent was doing research as the game of Chess and AI are such dense subjects. Although, we did not progress as far as we had hoped, perhaps we offer some words of advice and tips for future groups that are interested in continue our work. Testing could prove to be useful (we did not get to try a wide audience and mostly just tested it ourselves) if tested with players that actually know the game. Testing different random positions and allowing the chess engine to work using different choices when prompted and see whether or not the player is able to comprehend the move that was just played could be a good way to test it. Furthermore, memory limitations quickly became an issue because there are too many moves in chess. Even the best players in the world can only plan so many moves in their head, the same works with computers or laptops that we use. The program will run into memory issues and quickly shut the program down. We were thinking of implementing the zobrist hashing functions in order to facilitate the need of memory capacity but could not figure it out completely (despite the fact that some of the code is in the main). Maybe a future group can focus on this and relieve our project of this frustrating limitation. Lastly, there are plenty of algorithms out there that we did not try to implement due to lack of time. An algorithm that we looked at but did not pursue is the Widest Margin Algorithm. We covered it in our Literature Review section, but just as a reminder for any future groups, please read this article, [Chess AI: Competing Paradigms for Machine Intelligence](https://www.mdpi.com/1099-4300/24/4/550).
+Overall, we are proud of what we have accomplished in our project. Unfortunately, most of the time spent was doing research as the game of Chess and AI are such dense subjects. Although we did not progress as far as we had hoped, perhaps we can offer some words of advice and tips for future groups that are interested in continuing our work. Testing could prove to be useful (we did not get to try a wide audience and mostly just tested it ourselves) if tested with players that actually know the game. Testing different random positions and allowing the chess engine to work using different choices when prompted and seeing whether or not the player is able to comprehend the move that was just played, could be a good way to test it. Furthermore, memory limitations quickly became an issue because there are just too many moves in chess. Even the best players in the world can only plan so many moves in their head; the same concept works with computers or laptops that we use. The program will run into memory issues and quickly shut the program down. We were thinking of implementing the Zobrist hashing functions in order to facilitate the need of memory capacity but could not figure it out completely (despite the fact that some of the code is in the main). Maybe a future group can focus on this and relieve our project of this frustrating limitation. Lastly, there are plenty of algorithms out there that we did not try to implement due to lack of time. An algorithm that we looked at but did not pursue is the Widest Margin Algorithm. We covered it in our Literature Review section, but just as a reminder for any future groups, please read this article, [Chess AI: Competing Paradigms for Machine Intelligence](https://www.mdpi.com/1099-4300/24/4/550).
 
 ## Contributors
 
-BJ Bae, Joan Karstrom, Tyler Kay, Eric Phan, Raymond Yan
+* BJ Bae
+* Joan Karstrom
+* Tyler Kay
+* Eric Phan
+* Raymond Yan
 
-## Useful References
+## References
 
-- https://python-chess.readthedocs.io/en/latest/
-- https://healeycodes.com/building-my-own-chess-engine
-- https://stackoverflow.com/questions/16500739/chess-high-branching-factor
-- https://chess.stackexchange.com/questions/33161/do-chess-engines-hold-their-search-tree-in-memory
-- https://en.wikipedia.org/wiki/Transposition_table
-- https://en.wikipedia.org/wiki/Zobrist_hashing
-- https://en.wikipedia.org/wiki/Zobrist_hashing
-- https://support.chess.com/article/2965-how-are-moves-classified-what-is-a-blunder-or-brilliant-and-etc
-- https://cs.uwaterloo.ca/~alopez-o/divulge/chimp.html#:~:text=in%20computer%20development.-,History%20of%20Computer%20Chess,program%20with%20pencil%20and%20paper
-- https://www.thenewatlantis.com/publications/can-chess-survive-artificial-intelligence
-- https://www.mdpi.com/1099-4300/24/4/550
+### Useful Articles
+
+- [Chess Library for Python](https://python-chess.readthedocs.io/en/latest/)
+- [Building my Own Chess Engine](https://healeycodes.com/building-my-own-chess-engine)
+- [High Branching Factor: For Performance Issues](https://stackoverflow.com/questions/16500739/chess-high-branching-factor)
+- [Do Chess Engines Hold Their Search Tree in Memory?](https://chess.stackexchange.com/questions/33161/do-chess-engines-hold-their-search-tree-in-memory)
+- [Transposition Table](https://en.wikipedia.org/wiki/Transposition_table)
+- [Zobrist Hasing](https://en.wikipedia.org/wiki/Zobrist_hashing)
+- [How moves are Classified](https://support.chess.com/article/2965-how-are-moves-classified-what-is-a-blunder-or-brilliant-and-etc)
+
+### From the Literature Review
+
+- [Computer Chess: Past to Present](https://cs.uwaterloo.ca/~alopez-o/divulge/chimp.html#:~:text=in%20computer%20development.-,History%20of%20Computer%20Chess,program%20with%20pencil%20and%20paper)
+- [Can Chess Survive Artificial Intelligence](https://www.thenewatlantis.com/publications/can-chess-survive-artificial-intelligence)
+- [Chess AI: Competing Paradigms for Machine Intelligence](https://www.mdpi.com/1099-4300/24/4/550)
 
 
 
