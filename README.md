@@ -43,7 +43,7 @@ This article was necessary for us to proceed with our project. It takes one of t
 python main.py
 ```
 
-!(/relative/path/to/cpsc406_screenshot1.jpg?raw=true)
+![Step 1](/relative/path/to/cpsc406_screenshot1.jpg?raw=true)
 
 ## Contributors
 
