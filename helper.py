@@ -23,23 +23,23 @@ type_pieces = {
 
 def init_zobrist():
     table = []
-    for i in range(num_rows):
-        for j in range(num_columns):
-            for k in range(len(type_pieces)):
-                table[i][j][k] = random.getrandbits(1)
-    return table 
+    for i in range(num_rows):  # Iterate over rows
+        for j in range(num_columns):  # Iterate over columns
+            for k in range(len(type_pieces)):  # Iterate over piece types
+                table[i][j][k] = random.getrandbits(1)  # Generate a random bit and assign it to the corresponding position in the table
+    return table
 
 def hashing():
-    board = get_board()
-    zob_table = get_zobrist_table()
+    board = get_board()  # Get the game board
+    zob_table = get_zobrist_table()  # Get the Zobrist table
 
-    h = 0
-    for i in range(num_rows):
-        for j in range(num_columns):
-            piece = get_piece(board, i, j)
-            if (piece != empty):
-                h ^= zob_table[i][j][piece]
-    return h
+    h = 0  # Initialize the hash value
+    for i in range(num_rows):  # Iterate over rows
+        for j in range(num_columns):  # Iterate over columns
+            piece = get_piece(board, i, j)  # Get the piece at the current position on the board
+            if piece != empty:  # Check if the position is not empty
+                h ^= zob_table[i][j][piece]  # XOR the hash value with the Zobrist value for the piece at the current position
+    return h  # Return the final hash value
 
 
 #FIXME

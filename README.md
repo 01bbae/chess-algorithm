@@ -8,9 +8,25 @@ The idea of a combination of Chess and Artificial Intelligence isn't unheard of.
 
 ## Description/Motivation
 
-The motivation for modifying a chess algorithm to generate "good-enough" moves instead of solely the best move is to enhance the player experience and offer a more diverse set of gameplay scenarios. Current chess engines, such as Stockfish, use algorithms like alpha-beta pruning and mini-max to select the optimal move based on factors like material advantage, piece mobility, and king safety. While this approach has led to powerful and reliable chess engines, it may be problematic for players who want to learn while playing.
+It was a unanimous decision that we were all interested in learning more about the incredible works of the chess engine that is called Stockfish. As we diligently researched about the topic, we all kept looping back to the same idea. Although the chess engines today are compelling and can easily beat the best players in the world, they don’t necessarily help with allowing users to learn from the moves. They are sometimes too abstract in the sense that a human would never play that certain move. Which led us to this idea.
+
+The motivation for modifying a chess algorithm to generate "good-enough" moves instead of solely the best move is to enhance the player experience and offer a more diverse set of gameplay scenarios. Current chess engines, such as Stockfish, use algorithms like alpha-beta pruning and minimax to select the optimal move based on factors like material advantage, piece mobility, and king safety. While this approach has led to powerful and reliable chess engines, it may be problematic for players who want to learn while playing.
 
 By introducing a chess algorithm that generates multiple viable moves, players have a broader range of options to choose from, allowing them to select moves that align with their play-style and chess openings. Although these moves may not be the absolute best, they are still strategically sound and can offer a unique gameplay experience. Additionally, playing against a chess engine that does not always choose the optimal move may make the game more challenging and enjoyable.
+
+## Literature Review
+
+### [Computer Chess: Past to Present](https://cs.uwaterloo.ca/~alopez-o/divulge/chimp.html#:~:text=in%20computer%20development.-,History%20of%20Computer%20Chess,program%20with%20pencil%20and%20paper)
+
+Before diving into a topic one hardly knows anything about, it is best to familiarize with the content and rich history of it first. This article gives a vital yet brief coverage of how Chess is linked with the idea of machine learning and artificial intelligence. It also allows readers who are new to the topic to easily digest the content as it isn't as dense as some others. It goes over the theory of games and introduces ideas of how computers play chess (which is through specific algorithms). If there is anybody new to the topic of AI, we recommend you start with this article and allow your curiosity to continue from there. 
+
+### [Can Chess Survive Artificial Intelligence](https://www.thenewatlantis.com/publications/can-chess-survive-artificial-intelligence)
+
+Although this article reads more like a narrative, it is still quite insightful. Of course it is critical to focus on the technical aspect of a project, this article allowed us to step back and view it as an opportunity to help people (chess players of all levels) or rather allowed us see the bigger picture. The article talks about chess engines and possibly how they are taking over, but does not view this necessarily as a negative aspect. In fact, the article introduced us to an idea some of us have not heard of -- Centaur Chess. This, like several other articles, inspired us to work on this project as whole.
+
+### [Chess AI: Competing Paradigms for Machine Intelligence](https://www.mdpi.com/1099-4300/24/4/550)
+
+This article was necessary for us to proceed with our project. It takes one of the most famously studied chess endgames and places it into several chess engines to see how each would respond to it differently. Not only does it show how they solved it, the article talks about what methods were explicitly used. Since we were using Stockfish's engine we were mainly focused on that aspect and how they were using the alpha-beta pruning search algorithm and how exactly it was improving minimax searches, but if anybody is taking a look at our project and would like to expand on the idea, we highly recommend taking a look at this article.
 
 ## Setup:
 
@@ -19,14 +35,6 @@ By introducing a chess algorithm that generates multiple viable moves, players h
 3. pip install chess
 4. If you have a Mac, do 'brew install stockfish'. cd into /usr/local/Cellar/stockfish/{version}/bin. Copy the stockfish executable into the project directory.
 5. cd into this repository directory. Run main.py
-
-## Progress:
-
-- [x] Understand how stockfish and other chess engine algorithm is ran
-- [x] Implemented stockfish library into python script
-- [x] Implemented Zobrist Hashing Algorithm
-- [ ] Connect Zobrist Hashing Algorithm to chessboard
-- [x] Grab the list of "good moves"
 
 ## Contributors:
 
@@ -43,4 +51,8 @@ BJ Bae, Joan Karstrom, Tyler Kay, Eric Phan, Raymond Yan
 - https://en.wikipedia.org/wiki/Zobrist_hashing
 - https://support.chess.com/article/2965-how-are-moves-classified-what-is-a-blunder-or-brilliant-and-etc
 - https://cs.uwaterloo.ca/~alopez-o/divulge/chimp.html#:~:text=in%20computer%20development.-,History%20of%20Computer%20Chess,program%20with%20pencil%20and%20paper
+- https://www.thenewatlantis.com/publications/can-chess-survive-artificial-intelligence
+- https://www.mdpi.com/1099-4300/24/4/550
+
+
 
