@@ -11,7 +11,7 @@ elif os.name == "posix":
 else:
     raise Exception("OS Error: OS not recognized")
 
-print("Chess-Algorithm")
+print("\nChess-Algorithm\n")
 
 # Prompt the user to enter the FEN to analyze, depth, and number of branches
 fen = input("Enter FEN to analyze (Press enter to use default initial chess position): ")
@@ -22,12 +22,12 @@ num_branches = input("Enter number of branches to analyze (WARNING: having a lar
 if len(fen) == 0:
     fen = chess.STARTING_FEN
 
-print("Loading...")
+print("\nLoading...")
 print("This might take a few minutes...")
 
 # Create a new Tree instance with the provided FEN, depth, number of branches, and engine path
 newTree = Tree(fen, int(depth), int(num_branches), engine_path)
-print("Analysis tree created.")
+print("\nAnalysis tree created.\n")
 
 while True:
     print("================================================================")
@@ -37,7 +37,7 @@ while True:
     print("3. Exit program")
     print("================================================================")
 
-    choice = input("Enter choice number: ")
+    choice = input("\nEnter choice number: ")
 
     if int(choice) == 1:
         print(newTree.get_root_node().getEval())  # Get the evaluation of the current position using Stockfish and print it
