@@ -104,6 +104,10 @@ This article was necessary for us to proceed with our project. It takes one of t
    Eval:  +30
    ```
 
+## Future Development / Final Words
+
+Overall, we are proud of what we have accomplished in our project. Unfortunately, most of the time spent was doing research as the game of Chess and AI are such dense subjects. Although, we did not progress as far as we had hoped, perhaps we offer some words of advice and tips for future groups that are interested in continue our work. Testing could prove to be useful (we did not get to try a wide audience and mostly just tested it ourselves) if tested with players that actually know the game. Testing different random positions and allowing the chess engine to work using different choices when prompted and see whether or not the player is able to comprehend the move that was just played could be a good way to test it. Furthermore, memory limitations quickly became an issue because there are too many moves in chess. Even the best players in the world can only plan so many moves in their head, the same works with computers or laptops that we use. The program will run into memory issues and quickly shut the program down. We were thinking of implementing the zobrist hashing functions in order to facilitate the need of memory capacity but could not figure it out completely (despite the fact that some of the code is in the main). Maybe a future group can focus on this and relieve our project of this frustrating limitation. Lastly, there are plenty of algorithms out there that we did not try to implement due to lack of time. An algorithm that we looked at but did not pursue is the Widest Margin Algorithm. We covered it in our Literature Review section, but just as a reminder for any future groups, please use read this article, [Chess AI: Competing Paradigms for Machine Intelligence](https://www.mdpi.com/1099-4300/24/4/550).
+
 ## Contributors
 
 BJ Bae, Joan Karstrom, Tyler Kay, Eric Phan, Raymond Yan
