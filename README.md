@@ -125,8 +125,8 @@ Overall, we are proud of what we have accomplished in our project. Unfortunately
 - [High Branching Factor: For Performance Issues](https://stackoverflow.com/questions/16500739/chess-high-branching-factor)
 - [Do Chess Engines Hold Their Search Tree in Memory?](https://chess.stackexchange.com/questions/33161/do-chess-engines-hold-their-search-tree-in-memory)
 - [Transposition Table](https://en.wikipedia.org/wiki/Transposition_table)
-- [Zobrist Hasing](https://en.wikipedia.org/wiki/Zobrist_hashing)
-- [How moves are Classified](https://support.chess.com/article/2965-how-are-moves-classified-what-is-a-blunder-or-brilliant-and-etc)
+- [Zobrist Hashing](https://en.wikipedia.org/wiki/Zobrist_hashing)
+- [How Moves are Classified](https://support.chess.com/article/2965-how-are-moves-classified-what-is-a-blunder-or-brilliant-and-etc)
 
 ### From the Literature Review
 
