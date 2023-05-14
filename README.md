@@ -45,64 +45,64 @@ This article was necessary for us to proceed with our project. It takes one of t
    python main.py
    ```
 2. Follow the prompt and fill in the choices that you would like to see for example:
-```
-Enter FEN to analyze (Press enter to use default initial chess position): 
-Enter depth to analyze (WARNING: having a large depth might crash your computer. We recommend having depth of 2 or 3): 2 
-Enter number of branches to analyze (WARNING: having a large number of branches might crash your computer. We recommend having depth of less than 10): 3
-```
-In the example above, I decided to use the default initial chess position while analyzing a depth of 2 and 3 branches.
+   ```
+   Enter FEN to analyze (Press enter to use default initial chess position): 
+   Enter depth to analyze (WARNING: having a large depth might crash your computer. We recommend having depth of 2 or 3): 2 
+   Enter number of branches to analyze (WARNING: having a large number of branches might crash your computer. We recommend having depth of less than 10): 3
+   ```
+   In the example above, I decided to use the default initial chess position while analyzing a depth of 2 and 3 branches.
 
 3. Again, follow the prompt and fill in the choices that you would like to see for example:
-```
-================================================================
-What would you like to do:
-1. Get evaluation of the current position using Stockfish
-2. Get the best next move in the current position
-3. Exit program
-================================================================
-Enter choice number: 2
-+34
-+34
-+44
-r n b q k b n r
-p p p p p p p p
-. . . . . . . .
-. . . . . . . .
-. . . . . . . .
-. . P . . . . .
-P P . P P P P P
-R N B Q K B N R
-Score:  3
-Eval:  +8
-```
+   ```
+   ================================================================
+   What would you like to do:
+   1. Get evaluation of the current position using Stockfish
+   2. Get the best next move in the current position
+   3. Exit program
+   ================================================================
+   Enter choice number: 2
+   +34
+   +34
+   +44
+   r n b q k b n r
+   p p p p p p p p
+   . . . . . . . .
+   . . . . . . . .
+   . . . . . . . .
+   . . P . . . . .
+   P P . P P P P P
+   R N B Q K B N R
+   Score:  3
+   Eval:  +8
+   ```
 
 ### Using a FEN code
 
 1. If you would like to use a FEN code to use the program the instructions are just the same except input a FEN code. If you do not know what that is, there is more information [here](https://www.chess.com/terms/fen-chess). Just paste a FEN code when prompted, for example:
-```
-Enter FEN to analyze (Press enter to use default initial chess position): rnbqkbnr/pp1ppppp/8/2p5/4P3/5N2/PPPP1PPP/RNBQKB1R b KQkq - 1 2
-Enter depth to analyze (WARNING: having a large depth might crash your computer. We recommend having depth of 2 or 3): 2
-Enter number of branches to analyze (WARNING: having a large number of branches might crash your computer. We recommend having depth of less than 10): 4
-```
-Here, we are using the code, [rnbqkbnr/pp1ppppp/8/2p5/4P3/5N2/PPPP1PPP/RNBQKB1R b KQkq - 1 2](https://en.wikipedia.org/wiki/Forsyth%E2%80%93Edwards_Notation#:~:text=Forsyth%E2%80%93Edwards%20Notation%20(FEN),game%20from%20a%20particular%20position.), in order to see what move to make next with a depth of 2 and 4 branches total.
+   ```
+   Enter FEN to analyze (Press enter to use default initial chess position): rnbqkbnr/pp1ppppp/8/2p5/4P3/5N2/PPPP1PPP/RNBQKB1R b KQkq - 1 2
+   Enter depth to analyze (WARNING: having a large depth might crash your computer. We recommend having depth of 2 or 3): 2
+   Enter number of branches to analyze (WARNING: having a large number of branches might crash your computer. We recommend having depth of less than 10): 4
+   ```
+   Here, we are using the code, [rnbqkbnr/pp1ppppp/8/2p5/4P3/5N2/PPPP1PPP/RNBQKB1R b KQkq - 1 2](https://en.wikipedia.org/wiki/Forsyth%E2%80%93Edwards_Notation#:~:text=Forsyth%E2%80%93Edwards%20Notation%20(FEN),game%20from%20a%20particular%20position.), in order to see what move to make next with a depth of 2 and 4 branches total.
 
 2. Just like before, follow the prompt in order to view what you would like to see. In this example we picked option 2 and viewed these results:
-```
-+80
-+80
-+712
-+712
-r . b q k b n r
-p p . p p p p p
-. . n . . . . .
-. . p . . . . .
-. . . . P . . .
-. . . . . N . .
-P P P P . P P P
-R N B Q K B . R
-Score:  4
-Eval:  +30
-```
+   ```
+   +80
+   +80
+   +712
+   +712
+   r . b q k b n r
+   p p . p p p p p
+   . . n . . . . .
+   . . p . . . . .
+   . . . . P . . .
+   . . . . . N . .
+   P P P P . P P P
+   R N B Q K B . R
+   Score:  4
+   Eval:  +30
+   ```
 
 ## Contributors
 
